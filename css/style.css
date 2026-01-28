@@ -389,15 +389,17 @@ img {
   flex-direction: column;
   align-items: center;
   line-height: 1;
+  color: #0A1A2F; /* master colour */
 }
 
-/* AMIT text */
-.brand-amit {
-  font-size: 19px;
+/* baba text */
+.brand-baba {
+  
+  font-size: 15px;
   letter-spacing: 3px;
-  font-weight: 700;
+  color: #0A1A2F;
+  font-weight: 600;
   margin-bottom: 4px;
-  color: #C81D25;
 }
 
 /* FAL SABZI */
@@ -405,9 +407,12 @@ img {
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 1.2px;
-  background: linear-gradient(90deg,#1F2933,#1F2933);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #0A1A2F;
+
+  /* kill gradient effect */
+  background: none;
+  -webkit-text-fill-color: #0A1A2F;
+
   font-family: 'Poppins', system-ui;
 }
 
@@ -416,7 +421,9 @@ img {
   font-weight: 600;
   margin-left: 4px;
   letter-spacing: 3px;
-  background: linear-gradient(90deg,#ffd240,#ffb703);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #0A1A2F;
+
+  /* kill gradient effect */
+  background: none;
+  -webkit-text-fill-color: #0A1A2F;
 }
