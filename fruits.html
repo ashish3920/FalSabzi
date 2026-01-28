@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Fruits | Baba Shyam Fruit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="logo-header">
+    <img src="images/logo.png" class="logo-img">
+    <p>Fresh Fruits Price List</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="fruits.html">Fruits</a>
+    <a href="categories.html">Categories</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<p class="update-note">Last Updated: January 2026</p>
+
+<section class="fruit-grid">
+
+<div class="fruit-card" onclick="toggleFruit(this)">
+<span class="seasonal">Seasonal</span>
+<img src="images/apple.png">
+<h3>Apple 🍎</h3>
+
+<div class="fruit-details">
+<p>250g – ₹50</p>
+<p>500g – ₹95</p>
+<p>1 Kg – ₹180</p>
+<a href="https://wa.me/917506894309?text=I%20want%20to%20order%20Apple" class="order-btn">Order on WhatsApp</a>
+</div>
+</div>
+
+<div class="fruit-card" onclick="toggleFruit(this)">
+<img src="images/banana.png">
+<h3>Banana 🍌</h3>
+
+<div class="fruit-details">
+<p>250g – ₹15</p>
+<p>500g – ₹30</p>
+<p>1 Dozen – ₹60</p>
+<a href="https://wa.me/917506894309?text=I%20want%20to%20order%20Banana" class="order-btn">Order on WhatsApp</a>
+</div>
+</div>
+
+<div class="fruit-card" onclick="toggleFruit(this)">
+<img src="images/orange.png">
+<h3>Orange 🍊</h3>
+
+<div class="fruit-details">
+<p>250g – ₹40</p>
+<p>500g – ₹75</p>
+<p>1 Kg – ₹140</p>
+<a href="https://wa.me/917506894309?text=I%20want%20to%20order%20Orange" class="order-btn">Order on WhatsApp</a>
+</div>
+</div>
+
+<div class="fruit-card" onclick="toggleFruit(this)">
+<span class="seasonal">Seasonal</span>
+<img src="images/Mango.png">
+<h3>Mango 🥭</h3>
+
+<div class="fruit-details">
+<p>250g – ₹60</p>
+<p>500g – ₹110</p>
+<p>1 Kg – ₹200</p>
+<a href="https://wa.me/917506894309?text=I%20want%20to%20order%20Mango" class="order-btn">Order on WhatsApp</a>
+</div>
+</div>
+
+</section>
+
+<footer>
+Prices may vary | Contact for bulk orders
+</footer>
+
+<a href="https://wa.me/917506894309" class="float-whatsapp">💬</a>
+
+<script>
+function toggleFruit(card) {
+  let details = card.querySelector(".fruit-details");
+  let all = document.querySelectorAll(".fruit-details");
+  all.forEach(d => { if(d !== details) d.style.display = "none"; });
+  details.style.display = details.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
